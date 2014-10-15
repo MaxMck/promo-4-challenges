@@ -10,6 +10,7 @@ class BankAccount
   # - you can print transactions only with a password
   # - you can withdraw or deposit money
   # - You can see the balance of the account (through the position variable)
+  attr_accessor :name, :password, :transactions, :position, :iban
 
   MIN_DEPOSIT =  100
 
@@ -18,7 +19,8 @@ class BankAccount
     @password = password
     @transactions = []
     @position = 0
-    @name, @iban = name, iban
+    @name = name
+    @iban = iban
 
     add_transaction(initial_deposit)
   end
@@ -26,25 +28,41 @@ class BankAccount
   def withdraw(amount)
     # TODO: Call add_transaction with the right argument
     # TODO: returns a string with a message
+    add_transaction(- amount)
+    "You've just withdrawn #{amount} euros"
   end
 
   def deposit(amount)
     # TODO: Call add_transaction with the right argument
     # TODO: returns a string with a message
+    add_transaction(amount)
+    "You've just deposit #{amount} euros"
   end
 
   def transactions_history(args = {})
     # TODO: Check if there is a password and if so if it is correct
     # TODO: return a string displaying the transactions, BUT NOT return the transaction array !
+    if args == {}
+      "no password given"
+    elsif @password == args[:password]
+      p @transactions.to_s
+    else
+      "wrong password"
+    end
   end
 
   def iban
     # TODO: Hide the middle of the IBAN like FR14**************606 and return it
+    for i in (4..@iban.length - 4)
+      @iban[i] = "*"
+    end
+    @iban
   end
 
   def to_s
     # Method used when printing account object as string (also used for string interpolation)
     # TODO: Displays the account owner, the hidden iban and the position of the account
+    "Owner: #{@name}\nIBAN: #{@iban}\nCurrent amount: #{@position} euros"
   end
 
   private
@@ -52,5 +70,7 @@ class BankAccount
   def add_transaction(amount)
     # TODO: add the amount in the transactions array
     # TODO: update the current position (which represents the balance of the account)
+    @transactions << amount
+    @position += amount
   end
 end
