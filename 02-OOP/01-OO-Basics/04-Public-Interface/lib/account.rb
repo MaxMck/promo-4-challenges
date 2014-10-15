@@ -53,10 +53,7 @@ class BankAccount
 
   def iban
     # TODO: Hide the middle of the IBAN like FR14**************606 and return it
-    for i in (4..@iban.length - 4)
-      @iban[i] = "*"
-    end
-    @iban
+    @iban[0..3] + "*" * 14 + @iban[@iban.length - 3..@iban.length - 1]
   end
 
   def to_s
