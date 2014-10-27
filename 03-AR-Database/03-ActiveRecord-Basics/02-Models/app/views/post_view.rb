@@ -1,12 +1,11 @@
 class PostView
-  # TODO: implement some methods here when controller needs to `puts` or `gets`
-def print_posts(posts)
+  def print_posts(posts)
     posts.each do |post|
       puts "- #{post.name}, URL: #{post.url}, Note: #{post.votes}"
     end
   end
 
-def ask_for_name
+  def ask_for_name
     puts "Name?"
     print "> "
     gets.chomp
