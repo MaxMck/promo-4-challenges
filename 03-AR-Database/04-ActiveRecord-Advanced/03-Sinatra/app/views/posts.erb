@@ -1,3 +1,24 @@
-<h1>Hacker News</h1>
+<h1 style ="color:pink; text-align:center">  My Hacker News  </h1>
+&nbsp;
+&nbsp;
+&nbsp;
 
-# TODO: list posts here. You can use instance variables set in the controller (app.rb)
+<form action="/create_post" method="post" style ="text-align:center">
+  <input type="text" name="name" placeholder="Enter a name ">
+  <input type="text" name="url" placeholder="Enter an url ">
+  <button class="btn btn-sm btn-warning"> Create post </button>
+</form>
+
+
+<ul style ="text-align:center">
+  <% @posts.each do |post| %>
+    <p1>
+      <br>
+        <%= post.votes %>
+        &nbsp;
+        <a href="<%= post.url %>" target="_blank"> <%= post.name %>
+        </a>
+      </br>
+    </p1>
+  <% end %>
+</ul>

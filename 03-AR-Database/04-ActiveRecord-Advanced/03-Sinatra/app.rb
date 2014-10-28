@@ -11,7 +11,8 @@ set :views, proc { File.join(root, "app/views") }
 get '/' do
   # TODO: fetch posts from database.
   #       to pass them to the view, store them in an instance variable
-
+  @posts = Post.all
+  @users = User.all
 
   erb :posts  # The rendered HTML is in app/views/posts.erb
 end
