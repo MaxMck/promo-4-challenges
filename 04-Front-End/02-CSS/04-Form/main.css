@@ -1,6 +1,23 @@
-.container {
-  margin: 0 auto;  
-  width: 840px;
+body {
+  background-color: #F8E0E6;
 }
 
-/*Add some CSS rules to design your form */ 
+.container {
+  margin: 0 auto;
+  width: 840px;
+  color: #FE2E64
+}
+
+/*Add some CSS rules to design your form */
+
+h1 {
+  font-family: Arial;
+  border-bottom: 5px double #FE2E64 ;
+  color: #FE2E64;
+  text-align: center;
+}
+
+img {
+  text-align: center;
+
+}
