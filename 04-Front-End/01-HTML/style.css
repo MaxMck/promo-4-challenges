@@ -1,0 +1,17 @@
+#aside-nav{
+  width: 20%;
+  float: left;
+}
+
+.container{
+  float: right;
+  width: 75%;
+  padding: 20px;
+  border-left: 1px solid lightgrey;
+}
+
+
+h1{
+  font-family: Courier;
+  text-align: center;
+}
