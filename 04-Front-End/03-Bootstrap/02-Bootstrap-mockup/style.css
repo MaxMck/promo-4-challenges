@@ -1,0 +1,44 @@
+body {
+  font-family: 'Open Sans';
+  background: url("image/grid.jpg");
+}
+
+
+.ban {
+  padding: 175px;
+  background: url("image/fond.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: auto;
+  color: white;
+}
+
+.titre {
+text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+}
+
+img {
+  width: 140px
+}
+
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand{
+ color: white;
+ text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+}
+
+.dropdown-toggle{
+  color: #9BA0B3
+}
+
+#footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.main{
+  padding: 150px;
+}
