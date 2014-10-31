@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans';
-  background: url("image/grid.jpg");
+  background-color: white;
 }
 
 
@@ -42,3 +42,5 @@ img {
 .main{
   padding: 150px;
 }
+
+

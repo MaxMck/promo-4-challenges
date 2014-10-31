@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+  }
+
+  .height-wrapper{
+    height: 600px;
+  }
+  .overflow-wrapper{
+    width: 100%;
+    overflow: hidden;
+  }
+  .overflow-wrapper > video {
+    min-width: 1600px;
+  }
