@@ -1,8 +1,14 @@
 
 $(function() {
   $('#message').hide();
-  $('#message').slideDown("slow");
+  $('#message').delay(500).slideDown("slow");
   $('#message').on('click', function(e) {
+    $(this).slideUp();
+  });
+ $('#message-wrapper').on('mouseenter', function(e) {
+    $('#message').slideDown();
+  });
+  $('#message').on('mouseleave', function(e) {
     $(this).slideUp();
   });
 });
