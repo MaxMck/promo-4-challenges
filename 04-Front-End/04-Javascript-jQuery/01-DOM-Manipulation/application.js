@@ -37,8 +37,11 @@ function run_challenges() {
 
 
   // Ex 7. Write some code to sum all points given to all teams
-  var sum = 0;  // TODO: replace 0 with your sum result, keep the sum variable.
-
+    // TODO: replace 0 with your sum result, keep the sum variable.
+   var sum = 0
+   for (var i = 2; i < team_count * 3 ; i += 3) {
+    sum = sum + parseInt($('td').eq(i).text());
+  }
 
 
   // Ex 8. Change the background color of all table header cells to #DDF4FF
