@@ -1,5 +1,8 @@
-/*
-  *
-  * TODO: add your code here!
-  *
-*/
+
+$(function() {
+  $('#message').hide();
+  $('#message').slideDown("slow");
+  $('#message').on('click', function(e) {
+    $(this).slideUp();
+  });
+});
