@@ -50,7 +50,7 @@ function run_challenges() {
 
   // Ex 9. Translate the #results list 20px downward (animation would be great ^_^)
 
-
+  $('ul').animate({ "top": "+=20px" }, "slow");
 
   // Ex 10. Remove the "Email:" label from the DOM
 
