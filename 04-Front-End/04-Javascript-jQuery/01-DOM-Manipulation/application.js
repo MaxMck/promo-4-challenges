@@ -32,7 +32,8 @@ function run_challenges() {
 
   // Ex 6. Say there is a 15th team added to the table.
   //       Add a row at the bottom, this new team should have zero points.
-
+  row ='<tr> <td>15</td> <td>RC Strasbourg</td> <td>0</td> </tr>'
+  $('tbody').append(row);
 
 
   // Ex 7. Write some code to sum all points given to all teams
