@@ -53,6 +53,8 @@ function run_challenges() {
   $('ul').animate({ "top": "+=20px" }, "slow");
 
   // Ex 10. Remove the "Email:" label from the DOM
+  $('#data div label').remove();
+
 
 
 
