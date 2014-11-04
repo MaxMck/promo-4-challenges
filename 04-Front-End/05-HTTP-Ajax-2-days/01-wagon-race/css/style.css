@@ -1,0 +1,47 @@
+body {
+  background: url("../img/carte.jpg")no-repeat center;
+
+}
+
+.racer_table td {
+
+  height: 50px;
+  width: 50px;
+    border-bottom: solid black 2px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans';
+  text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+}
+
+
+#player1_race td.active {
+
+  background: url("../img/player_1.png") no-repeat center;
+  background-size: 50px;
+  margin: auto;
+
+}
+
+#player2_race td.active {
+
+  background: url("../img/player_2.png") no-repeat center;
+  background-size: 50px;
+  margin: auto;
+
+}
+
+td.finish {
+  background: url("http://www.vlaggenclub.nl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/i/finish-vlag-finisch.gif") no-repeat center;
+  background-size: 50px;
+  margin: auto;
+  }
+
+td.start {
+  background: url("http://www.easyicon.net/api/resize_png_new.php?id=1178731&size=128") no-repeat center;
+  background-size: 50px;
+  margin: auto;
+  }
